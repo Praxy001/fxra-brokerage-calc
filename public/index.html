@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brokerage Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Brokerage Simulator</h1>
+  
+  <form id="simulator-form">
+    <label for="scheme">Scheme:</label>
+    <select id="scheme" required>
+      <option value="Shriram Finance Limited">Shriram Finance Limited</option>
+      <option value="Bajaj Finance Limited">Bajaj Finance Limited</option>
+      <option value="Mahindra Finance">Mahindra Finance</option>
+      <option value="PNB Housing Finance Ltd">PNB Housing Finance Ltd</option>
+      <option value="Banks">Banks</option>
+    </select>
+    
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" required min="0" />
+
+    <label for="tenure">Tenure:</label>
+    <select id="tenure" required>
+      <!-- Tenures will be dynamically populated here -->
+    </select>
+    
+    <button type="submit">Calculate</button>
+  </form>
+  
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
